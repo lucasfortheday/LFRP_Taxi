@@ -1,4 +1,4 @@
-PerformHttpRequest("https://raw.githubusercontent.com/lucasfortheday/LGFRP_Taxi/master/__resource.lua", function(errorCode, result, headers)
+PerformHttpRequest("https://raw.githubusercontent.com/lucasfortheday/LFRP_Taxi/master/__resource.lua", function(errorCode, result, headers)
     local version = GetResourceMetadata(GetCurrentResourceName(), 'resource_version', 0)
 
     if string.find(tostring(result), version) == nil then
